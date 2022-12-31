@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;   
+}
+
+.body {
+
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    display: container;
+    container-template-columns: 1fr 1fr;
+    max-width: 700px;
+    
+}
+
+img  {
+    max-width: 100%;
+}
+
+.container .box {  
+    background-color: #fff;
+    padding: 60px;
+}
+
+.container .box .text {
+      color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.container .box h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+.container .box p {
+    font-size: 20px;
+    color: hsl(228, 12%, 48%);
+}

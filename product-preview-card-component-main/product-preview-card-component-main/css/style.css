@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    /* font-family: 'Fraunces', serif; */
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+.container {
+    min-width: 600px;
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        min-width: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+}
+
+.image {
+    width: 50%;
+    background-image: url(../images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+@media (max-width: 767px) {
+    .image {
+        width: 100%;
+        height: 350px;
+        background-image: url(../images/image-product-mobile.jpg);
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+.box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 35px 40px;
+}
+
+@media (max-width: 767px) {
+    .container .box {
+        width: 100%;
+        row-gap: 12px;
+        padding: 25px;
+    }
+}
+
+.container .box .text {
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 15px;
+}
+
+.container .box h1 {
+    font-size: 35px;
+    font-family: 'Fraunces', serif; 
+    margin: 0;
+}
+
+.container .box p {
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6;
+}
+
+.container .box .price {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.container .box .price span:first-of-type {
+    font-size: 30px;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif; 
+}
+
+.container .box .price span:last-of-type{
+    font-size: 18px;
+    font-weight: bold;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.container .box  button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+}
+
+.container .box  button a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    margin-left: 10px;
+}  
+
+.color {
+    color: hsl(158, 36%, 37%);
+    color: hsl(30, 38%, 92%);
+    color: hsl(212, 21%, 14%);
+    color: hsl(228, 12%, 48%);
+    color: hsl(0, 0%, 100%);
+
+}

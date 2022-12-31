@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* start color section  */
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 280px 210px;
+    background-image: linear-gradient(to top, hsl(276, 55%, 52%) 50%, hsl(293, 100%, 63%) 100%);
+    background-color: hsl(276, 55%, 52%);
+    width: 445px;
+    height: 600px;
+}
+
+@media (max-width: 767px) {
+    .top {
+        width: 180px;
+        height: 600px;
+        border-radius: 0 0 250px;
+    }
+}
+
+@media (min-width: 768px) {
+    .down {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 250px 0 0 0;
+        width: 250px;
+        background-color: hsl(270, 20%, 96%);
+        height: 600px;
+    }
+}
+
+/* End  color section   */
+
+/* start conversation */
+.container {
+    overflow: hidden;
+}
+
+.conversation {
+    max-width: 300px;
+    border-radius: 35px;
+    border: 15px solid white;
+    background-color: hsl(270, 20%, 96%);
+    position: relative;
+    display: block;
+    margin: 50px auto 30px;
+}
+
+
+@media (min-width: 767px) {
+    .conversation {
+        box-shadow: 5px 5px 20px #ccc;
+    }
+}
+
+.conversation .title {
+    border-radius: 20px 20px 10px 10px;
+    background-image: linear-gradient(to right, hsl(276, 55%, 52%) 50%, hsl(293, 100%, 63%) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px 10px;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+}
+
+.conversation .title::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.conversation .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conversation .info img {
+    width: 30px;
+    max-width: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: 10px;
+}
+
+.conversation .title .text {
+    margin-left: 10px;
+}
+
+.conversation .title .info h4 {
+    font-weight: bold;
+}
+
+.conversation .title .info p {
+    font-size: 14px;
+    font-size: 14px;
+    color: #ffffff73;
+}
+
+
+/*start landing*/
+.landing {
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+}
+
+.landing>p {
+    max-width: 180px;
+    color: hsl(271, 36%, 24%);
+    background-color: rgb(236 235 235);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 12px;
+
+}
+
+.landing .landing-body {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.landing .landing-body .images {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.conversation .landing .landing-body img {
+    max-width: 100%;
+    width: 50px;
+    border-radius: 10px;
+    margin: 10px 0 0 8px;
+}
+
+.landing .landing-body p {
+    width: fit-content;
+    margin-left: 75px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0px 7px 5px #ccc;
+    font-size: 12px
+}
+
+.conversation .landing .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: hsl(0, 0%, 100%);
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%) 50%, hsl(276, 55%, 52%) 100%);
+    margin-bottom: 10px;
+    border-radius: 10px 10px 10px 4px;
+    max-width: 200px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.conversation .landing .box p {
+    margin-left: 10px;
+}
+
+.conversation .landing .box span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.conversation .landing .message {
+    position: relative;
+}
+
+.conversation .landing .message input {
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    margin-top: 5px;
+    outline: none;
+}
+
+.conversation .landing .message input::placeholder {
+    font-size: 12px;
+}
+
+.conversation .landing .message i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 30px;
+}
+
+@media (min-width: 767px) {
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.container .text-section {
+    flex: 1;
+}
+
+@media (max-width: 767px) {
+    .container .text-section {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+
+.container .text-section h1 {
+    font-size: 40px;
+    color: hsl(271, 36%, 24%);
+    margin: 0 auto 20px;
+}
+
+.container .text-section p {
+    line-height: 1.8;
+    color: #777;
+    font-size: 17px;
+    display: block;
+    max-width: 450px;
+}
+
+@media (max-width: 767px) {
+    .container .text-section p  {
+        padding: 20px;
+    }
+}
+
+/*end landing*/
+/* end conversation */
