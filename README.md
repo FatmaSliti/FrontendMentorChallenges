@@ -22,4 +22,4 @@ This repository contains 6 HTML/CSS challenges that I have completed. Each chall
 
 # Note
 
-The image used in the preview section of this readme is an imitation of the Frontend Mentor challenge and was created by me. It is not the original challenge photo provided by Frontend Mentor
+The images used above in this readme file are imitations of the Frontend Mentor challenges and were created by me. They are not the original challenge photos provided by Frontend Mentor.
